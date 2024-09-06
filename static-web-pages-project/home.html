@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles\styles.css">
+        <link rel="stylesheet" href="styles\home-page-styles.css">
+    </head>
+
+    <body>
+
+
+        <!-- Navbar -->
+        <div id="navbar-placeholder"></div>
+        <!-- Will be loaded using JS to keep it generic for all pages -->
+
+        
+        <!-- Home Page Content -->
+        <div class="container mt-4">
+
+            <!-- Welcome message div -->
+            <div class="row align-items-center" id="welcome-div">
+                <div class="col-md-8">
+                    <h1 id="welcome-message" class="fw-bold"></h1> <!-- Welcome message will be inserted here -->
+                </div>
+                <div class="col-md-4 text-end">
+                    <button class="btn btn-success" id="new-request-btn">New Request</button>
+                </div>
+            </div>
+
+            <!-- Home-page profile information row div -->
+            <div class="row mt-4"> 
+
+                <!-- Profile card div-->
+                <div class="col-md-6">
+                  <div class="card shadow-sm p-3 mb-5 rounded custom-card-bg">
+                    <div class="d-flex align-items-center justify-content-between">
+                      
+                      <div class="d-flex align-items-center">
+                        <!-- Profile image (src from script.js)-->
+                        <img id="profile-image" src="" alt="Profile Picture"  width="70" height="60">
+                        
+                        <!-- Inserted profile details -->
+                        <div class="ms-3" id="profile-name-position-home-page">
+                          <h5 id="profile-name"></h5>
+                          <p class="text-muted" id="profile-position"></p>
+                        </div>
+                      </div>
+            
+                      <!-- View profile button -->
+                      <a href="profile.html" class="btn btn-outline-success" id="home-page-profile-image">View Profile</a>
+                    </div>
+                    
+                    <!-- Profile Sections -->
+                    <div class="container mt-3">
+                        <div class="row">
+                            <!-- Left Section -->
+                            <div class="col-5 d-flex align-items-center">
+                                <i class="fa-solid fa-user-large fa-2x" style="color: #9f9e9e;"></i>
+                                <div class="ms-1">
+                                    <p class="mb-0" id="section-title-0"></p>
+                                    <p class="mb-0 text-muted" id="section-text-0"></p>
+                                </div>
+                            </div>
+                            <!-- Empty Column to create space between the sections -->
+                            <div class="col-1"></div>
+
+                            <!-- Right Section -->
+                            <div class="col-5 d-flex align-items-center">
+                                <i class="fa-solid fa-arrow-up-wide-short fa-2x" style="color: #9f9e9e;"></i>
+                                <div class="ms-1">
+                                    <p class="mb-0" id="section-title-1"></p>
+                                    <p class="mb-0 text-muted" id="section-text-1"></p>
+                                </div>
+                            </div>
+
+                            <!-- Empty Column to adjust the space -->
+                            <div class="col-10"></div>
+                        </div>
+                    </div>
+
+                    
+  
+                  </div>
+                </div>
+            
+                <!-- Vacation and leave requests -->
+                <div class="col-md-3">
+                    <div class="card text-white bg-success mb-3 p-4 request-card">
+                      <div class="row d-flex align-items-center">
+                        <div class="col-8 d-flex align-items-center">
+                          <i class="fa-solid fa-file-invoice fa-4x"></i>
+                          <div class="ms-3 text-start">
+                            <p class="mb-0">Vacation Requests</p>
+                          </div>
+                        </div>
+
+                        <div class="col-4 text-end">
+                          <h2 class="mb-0 request-number">10</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+            
+                  <div class="col-md-3">
+                    <div class="card text-white bg-success mb-3 p-4 request-card">
+                      <div class="row d-flex align-items-center">
+ 
+                        <div class="col-8 d-flex align-items-center">
+                          <i class="fa-solid fa-file-invoice fa-4x"></i>
+                          <div class="ms-3 text-start">
+                            <p class="mb-0">Leave Requests</p>
+                          </div>
+                        </div>
+
+                        <div class="col-4 text-end">
+                          <h2 class="mb-0 request-number">10</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+
+
+
+              </div>
+
+
+            <!-- sliding images -->
+             <div class="latest-news">
+                <h5>Latest News:</h5>
+             </div>
+             
+             <div id="imageCarousel" class="carousel slide" >
+                
+                
+                <div class="carousel-inner">
+                  <!-- Image 1 -->
+                  <div class="carousel-item active">
+                    <img src="images/water-image.jpg" class="d-block w-100" alt="Best Spots For A Summer Vacation">
+                    <div class="carousel-caption carousel-caption-bottom">
+                      <h5>Best Spots For A Summer Vacation</h5>
+                      <p>Check out these spots where we provide a discount</p>
+                    </div>
+                  </div>
+              
+                  <!-- Image 2 -->
+                  <div class="carousel-item">
+                    <img src="images/forest-image.jpg" class="d-block w-100" alt="Adventure In The Forest">
+                    <div class="carousel-caption carousel-caption-bottom">
+                      <h5>Adventure In The Forest</h5>
+                      <p>If you're excited about adventure</p>
+                    </div>
+                  </div>
+              
+                  <!-- Image 3 -->
+                  <div class="carousel-item">
+                    <img src="images/fish-image.jpg" class="d-block w-100" alt="Curious About Marine Creatures?">
+                    <div class="carousel-caption carousel-caption-bottom">
+                      <h5>Curious About Marine Creatures?</h5>
+                      <p>Your chance to discover the sea world!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Indicators -->
+              <div class="carousel-indicators">
+                <button class="navigate-button" type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button class="navigate-button" type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="navigate-button" type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+
+
+
+
+    <!-- Vacation requests -->
+
+  <div class="container card-container">
+    
+    <!-- Clear Box Div -->
+    <div class="clear-box">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h5><i class="fa-solid fa-file-invoice fa-2x" style="color: #198754;"></i>&nbsp;Vacation Requests</h5> 
+        </div>
+                <!-- Search Bar -->
+                <div class="col-md-6">
+                    <div class="input-group float-end">
+                        <input type="text" class="form-control" id="search-bar" placeholder="Search..." onkeyup="filterCards()">
+                        <span class="input-group-text"><i class="fas fa-search green-search"></i></span>
+                    </div>
+                </div>
+        </div>
+      <hr>
+
+      <div class="row">
+
+
+        <div class="row g-4" id="vacation-cards-container">
+
+        <!-- Card 1 -->
+        <div class="col-md-3 mb-3 vacation-card" data-name="Ahmad Attar">
+          <div class="custom-card vacationRequests-card p-3">
+            <img src="" alt="pending name" id="pending-image" width="90" height="80">
+            <h6 id="pending-name"></h6>
+            <p>Submitted on:</p>
+            <b><p id="pending-submit"></p></b>
+            <p>Duration:</p>
+            <b><p id="pending-duration"></p></b>
+            <br>
+            <p>Currently at:</p>
+            <p id="pending-currently"></p>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-danger decline-button">Decline</button>
+                <button class="btn btn-success approve-button">Approve</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3 mb-3 vacation-card" data-name="belal Mahmoud">
+            <div class="custom-card vacationRequests-card p-3">
+              <img src="" alt="pending name" id="pending-image" width="90" height="80">
+              <h6 id="pending-name"></h6>
+              <p>Submitted on:</p>
+              <b><p id="pending-submit"></p></b>
+              <p>Duration:</p>
+              <b><p id="pending-duration"></p></b>
+              <br>
+              <p>Currently at:</p>
+              <p id="pending-currently"></p>
+              <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-danger decline-button">Decline</button>
+                <button class="btn btn-success approve-button">Approve</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+        <div class="col-md-3 mb-3 vacation-card" data-name="Khalid Othman">
+            <div class="custom-card vacationRequests-card p-3">
+              <img src="" alt="pending name" id="pending-image" width="90" height="80">
+              <h6 id="pending-name"></h6>
+              <p>Submitted on:</p>
+              <b><p id="pending-submit"></p></b>
+              <p>Duration:</p>
+              <b><p id="pending-duration"></p></b>
+              <br>
+              <p>Currently at:</p>
+              <p id="pending-currently"></p>
+              <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-danger decline-button">Decline</button>
+                <button class="btn btn-success approve-button">Approve</button>
+            </div>
+            </div>
+          </div>
+
+
+          <!-- Card 4 -->
+        <div class="col-md-3 mb-3 vacation-card" data-name="Salah El Din">
+            <div class="custom-card vacationRequests-card">
+              <img src="" alt="pending name" id="pending-image" width="90" height="80">
+              <h6 id="pending-name"></h6>
+              <p>Submitted on:</p>
+              <b><p id="pending-submit"></p></b>
+              <p>Duration:</p>
+              <b><p id="pending-duration"></p></b>
+              <br>
+              <p>Currently at:</p>
+              <p id="pending-currently"></p>
+              <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-danger decline-button">Decline</button>
+                <button class="btn btn-success approve-button">Approve</button>
+            </div>
+            </div>
+          </div>
+          </div>
+
+
+        
+
+        
+      </div>
+     <div class="view-more-div">
+      <!-- View More Link -->
+      <a href="vacation-request.html" class="view-more-link" id="view-more-history">View More ></a>
+     </div>
+     
+    </div>
+    <!-- End of Clear Box Div for pending requests -->
+  </div>
+              
+             <br><br><br><br><br><br><br>
+      
+  </div>
+        <!-- Include Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Change slide every 10 seconds
+            const carousel = new bootstrap.Carousel('#imageCarousel', {
+                interval: 10000,
+                ride: 'carousel'
+            });
+        </script>
+        <script src="script.js"></script>
+        <script src="vacationRequests.js"></script>
+    </body>
+</html>
