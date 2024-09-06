@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles\styles.css">
+  <link rel="stylesheet" href="styles\profile-page-styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Profile Page Content -->
+  <div class="container mt-4">
+    
+    <!-- Profile card div-->
+  <div class="col-12"> 
+  <div class="card shadow-sm p-3 mb-5 rounded custom-card-bg">
+        <!-- First row: Profile image, name/position, and "View Profile" button -->
+        <div class="d-flex align-items-center justify-content-between">
+          
+          <!-- Left side: Profile image and details -->
+          <div class="d-flex align-items-center">
+            <!-- Profile image (src from script.js) -->
+            <img id="profile-image-pp" src="" alt="Profile Picture" width="70" height="60">
+            
+            <!-- Profile name and position beside the image -->
+            <div class="ms-3">
+              <h5 id="profile-name-pp"></h5>
+              <p id="marketing-department">Marketing Department</p>
+              <p class="text-muted" id="profile-position-pp"></p>
+            </div>
+          </div>
+
+          <!-- Right side: "View Profile" button -->
+          <div class="col-md-4 text-end">
+            <button class="btn btn-request">New Request</button>
+          </div>
+        </div>
+
+
+
+        <!-- Second row with 5 sections -->
+    <div class="row mt-4">
+
+      <div class="col-12 col-md-2 text-center">
+        <i class="fa-solid fa-user"></i> <!-- Reporting to icon -->
+        <div>
+          <h6 id="section-title-0"></h6>
+          <p id="section-text-0"></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-2 text-center">
+        <i class="fa-solid fa-chart-line"></i> <!-- Corporate level icon -->
+        <div>
+          <h6 id="section-title-1"></h6>
+          <p id="section-text-1"></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-2 text-center">
+        <i class="fa-regular fa-hourglass-half"></i> <!-- Lifetime icon -->
+        <div>
+          <h6 id="section-title-2"></h6>
+          <p id="section-text-2"></p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-2 text-center">
+        <i class="fa-solid fa-tree"></i> <!-- Vacation days left icon -->
+        <div>
+          <h6 id="section-title-3"></h6>
+          <p id="section-text-3"></p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-2 text-center">
+        <i class="fa-solid fa-prescription-bottle-medical" style="color: #9f9e9e;"></i> <!-- Sick days left icon -->
+        <div>
+          <h6 id="section-title-4"></h6>
+          <p id="section-text-4"></p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+  <!-- history of requests -->
+
+  <div class="container card-container">
+    <!-- Clear Box Div -->
+    <div class="clear-box">
+      <h5><i class="fa-solid fa-file-invoice fa-2x" style="color: #198754;"></i>&nbsp;History</h5> 
+      <hr>
+
+      <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <h5>Annual Vacation</h5>
+            <p>2/3/2023 - 10/3/2023</p>
+            <p class="card-footer">8 days</p>
+            <p >Approved by: Hazem Azmi</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <h5>Sick Vacation</h5>
+            <p>2/3/2023 - 10/3/2023</p>
+            <p class="card-footer">8 days</p>
+            <p >Approved by: Hazem Azmi</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <h5>Annual Vacation</h5>
+            <p>2/3/2023 - 10/3/2023</p>
+            <p class="card-footer">8 days</p>
+            <p >Approved by: Hazem Azmi</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <h5>Non Paid Vacation</h5>
+            <p>2/3/2023 - 10/3/2023</p>
+            <p class="card-footer">8 days</p>
+            <p >Approved by: Hazem Azmi</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <!-- Card 5 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <h5>Annual Vacation</h5>
+            <p>2/3/2023 - 10/3/2023</p>
+            <p class="card-footer">8 days</p>
+            <p>Approved by: Hazem Azmi</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <h5>Non Paid Vacation</h5>
+            <p>2/3/2023 - 10/3/2023</p>
+            <p class="card-footer">8 days</p>
+            <p >Approved by: Hazem Azmi</p>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <h5>Sick Vacation</h5>
+            <p>2/3/2023 - 10/3/2023</p>
+            <p class="card-footer">8 days</p>
+            <p >Approved by: Hazem Azmi</p>
+          </div>
+        </div>
+
+
+      </div>
+     <div class="view-more-div">
+      <!-- View More Link -->
+      <a href="#" class="view-more-link" id="view-more-history">View More ></a>
+     </div>
+    </div>
+    <!-- End of Clear Box Div -->
+  </div>
+    
+
+
+
+
+  <!-- pending requests -->
+
+  <div class="container card-container">
+    <!-- Clear Box Div -->
+    <div class="clear-box">
+      <h5><i class="fa-solid fa-file-invoice fa-2x" style="color: #198754;"></i>&nbsp;Pending Requests</h5> 
+      <hr>
+
+      <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <img src="" alt="pending name" id="pending-image" width="90" height="80">
+            <h6 id="pending-name"></h6>
+            <p>Submitted on:</p>
+            <b><p id="pending-submit"></p></b>
+            <p>Duration:</p>
+            <b><p id="pending-duration"></p></b>
+            <br>
+            <p>Currently at:</p>
+            <p id="pending-currently"></p>
+          </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="col-md-3 mb-3">
+          <div class="custom-card">
+            <img src="" alt="pending name" id="pending2-image" width="90" height="80">
+            <h6 id="pending2-name"></h6>
+            <p>Submitted on:</p>
+            <b><p id="pending2-submit"></p></b>
+            <p>Duration:</p>
+            <b><p id="pending2-duration"></p></b>
+            <br>
+            <p>Currently at:</p>
+            <p id="pending2-currently"></p>
+          </div>
+        </div>
+
+        
+      </div>
+     <div class="view-more-div">
+      <!-- View More Link -->
+      <a href="#" class="view-more-link" id="view-more-history">View More ></a>
+     </div>
+     
+    </div>
+    <!-- End of Clear Box Div for pending requests -->
+  </div>
+
+
+
+
+    
+
+
+  <br><br><br><br><br>
+  <!-- end of page contents -->
+  </div>
+  <!-- <script src="script.js"></script> -->
+  <script src="scriptProfilePage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
